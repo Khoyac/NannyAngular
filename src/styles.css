@@ -1,1 +1,291 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+  font-family: krona;
+  src: url("assets/fonts/KronaOne-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: OSCondensed;
+  font-weight: 400;
+  src: url("assets/fonts/OpenSansCondensed-Bold.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #d0d49b;
+  font-family: OSCondensed, "Open Sans", serif;
+  z-index: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: krona;
+}
+
+body {
+  background: #e8ebf6;
+}
+
+h4 {
+  color: #92946c;
+}
+
+.capa {
+  width: 100%;
+  height: inherit;
+  background: #dccaee66;
+  position: absolute;
+}
+
+a {
+  color: #9da8d4;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #7a89c4;
+}
+
+main > .container {
+  background: #f8f9fa;
+}
+
+section {
+  padding: 60px 0;
+}
+section:nth-child(even) {
+  background-color: white;
+  background-image: url("assets/img/FondoTransparente.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#topbar {
+  background: #92946c;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+#topbar.topbar-scrolled {
+  top: -40px;
+}
+#topbar .social a {
+  color: #437099;
+  padding-left: 15px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+#topbar i {
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+nav {
+  top: 0;
+  transition: all 0.5s;
+}
+nav.nav-scrolled {
+  top: 40px !important;
+}
+
+.margin-top {
+  margin-top: 170px;
+}
+
+#slogan {
+  width: 100%;
+  height: 700px;
+  background: url("assets/img/doctors.jpg") right center;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+}
+#slogan .container {
+  position: relative;
+}
+#slogan h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #3b3c2b;
+  width: fit-content;
+  padding: 0 12px;
+}
+#slogan h2 {
+  color: #3b3c2b;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+  width: fit-content;
+  padding: 0 12px;
+}
+
+.info-box {
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 31px;
+  background: white;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.info-box i {
+  font-size: 40px;
+  color: #d49e9b;
+}
+
+#porque .row {
+  margin-top: -200px;
+}
+
+#ayudar {
+  text-align: center;
+}
+#ayudar .row {
+  padding: 0 80px;
+}
+#ayudar .row div {
+  margin-bottom: 20px;
+}
+#ayudar h3, #ayudar h4 {
+  text-decoration: underline;
+  text-decoration-color: #cbb0e6;
+}
+
+.btn-propio {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 35px;
+  margin-top: 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #d49e9b;
+}
+.btn-propio:hover {
+  background: #c57b77;
+}
+
+.icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #8dc2f1;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-right: 20px;
+}
+.icon-box .icon i {
+  color: #1977cc;
+  font-size: 32px;
+}
+
+.panel {
+  margin: 0 auto;
+  background-color: white;
+  max-width: 960px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: relative;
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+}
+.panel .list {
+  padding: 10px;
+  border-right: 1px solid;
+}
+.panel .list:last-child {
+  border-right: none;
+}
+.panel .list .icon {
+  margin-bottom: 25px;
+  max-width: 50%;
+  fill: #92946c;
+}
+.panel .list .icon:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #6e7594;
+}
+.panel .list .header {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.panel .list ul {
+  color: #cbb0e6;
+  font-weight: 600;
+  margin: 25px 0;
+  list-style: none;
+  padding: 0 5%;
+}
+.panel .list ul li {
+  border-top: 1px solid #cbb0e6;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 8px 15px;
+}
+.panel .list ul li:last-child {
+  border-bottom: 1px solid #cbb0e6;
+}
+.panel .list ul li p {
+  font-size: 9px;
+  margin: 0;
+}
+
+#masInfo i {
+  font-size: 32px;
+}
+#masInfo table {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+  height: 100%;
+}
+.carousel .carousel-indicators li {
+  background: #9da8d4;
+  border: 10px;
+}
+
+#faq .btn {
+  font-weight: 600;
+}
+
+#consultas .borde {
+  padding: 4px;
+  background: linear-gradient(to right, #cbb0e6, #f8f9fa00 31%);
+  margin: 20px;
+}
+#consultas .row {
+  margin: 0px;
+  background: #f8f9fa;
+}
+#consultas .row .col-2 {
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+}
+#consultas .row .col-10 {
+  margin: auto;
+  text-align: justify;
+}
+
+/*# sourceMappingURL=estilos.css.map */

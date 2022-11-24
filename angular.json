@@ -25,9 +25,25 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/js/dist/util.js",
+              "node_modules/bootstrap/js/dist/alert.js",
+              "node_modules/bootstrap/js/dist/button.js",
+              "node_modules/bootstrap/js/dist/carousel.js",
+              "node_modules/bootstrap/js/dist/collapse.js",
+              "node_modules/bootstrap/js/dist/dropdown.js",
+              "node_modules/bootstrap/js/dist/modal.js",
+              "node_modules/bootstrap/js/dist/scrollspy.js",
+              "node_modules/bootstrap/js/dist/tab.js",
+              "node_modules/bootstrap/js/dist/tooltip.js",
+              "node_modules/bootstrap/js/dist/popover.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -87,6 +103,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,5 +111,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "ae63bfd3-656c-4eb2-9df9-b29f42e7b538"
   }
 }
