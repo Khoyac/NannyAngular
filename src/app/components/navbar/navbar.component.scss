@@ -1,0 +1,63 @@
+.navbar-container {
+  display: flex;
+  box-shadow: 0 0 10px -5px #666;
+
+  > div {
+    height: 45px
+  }
+}
+
+.navbar-desktop {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+
+    &:after{
+      content: "";
+      height: 2px;
+      width: 10%;
+      background-color: limegreen;
+      position: absolute;
+      bottom: 5px;
+      left: calc(45%);
+      transition: all 0.75s ease-in-out;
+    }
+
+    &:hover{
+      color: limegreen;
+      transition: all 0.5s ease-in-out;
+
+      &:after{
+        transform: scaleX(4);
+        transition: all 0.75s ease-in-out;
+      }
+    }
+  }
+
+  .navbar-logo{
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 75px);
+
+    img {
+      width: 150px;
+    }
+  }
+}
+
+.navbar-mobile {
+
+  .hidden-menu {
+
+    span {
+
+    }
+  }
+}
