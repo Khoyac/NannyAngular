@@ -1,33 +1,38 @@
 <div class="navbar-container p-3 justify-content-center">
 
   <div class="navbar-desktop d-none d-md-grid col-md-10 col-xl-8">
-    <span> link 1 </span>
-    <span> link 1 </span>
+    <a> link 1 </a>
+    <a> link 1 </a>
+    <a> link 1 </a>
     <span></span>
-    <span> link 1 </span>
-    <span> link 1 </span>
+    <a> link 1 </a>
+    <a> link 1 </a>
+    <a> link 1 </a>
     <div class="navbar-logo">
-      <img src="../../../assets/img/logo.png" />
+      <img class="px-2 pb-1" src="../../../assets/img/logo.png" />
     </div>
   </div>
 
   <div class="navbar-mobile d-md-none col-12">
     <nav class="p-0">
       <div class="d-flex justify-content-between align-items-center">
+        <!-- Menu button -->
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleMenu" aria-controls="navbarToggleMenu" aria-expanded="false" aria-label="Toggle navigation">
           <img height="35px" src="../../../assets/svg/burger-menu.svg" />
         </button>
-        <img width="100" src="../../../assets/img/logo.png" />
+
+        <!-- Mobile logo navbar -->
+        <img height="45px" src="../../../assets/img/logo.png" />
       </div>
     </nav>
-    <div class="hidden-menu mt-3 collapse" id="navbarToggleMenu">
-      <div class="bg-dark p-4">
-        <h5 class="text-white h4">Collapsed content</h5>
-        <span> link 1 </span>
-        <span> link 1 </span>
-        <span></span>
-        <span> link 1 </span>
-        <span> link 1 </span>
+
+    <!-- Hidden menu -->
+    <div class="hidden-menu bg-white p-2 mt-3 collapse" id="navbarToggleMenu">
+      <div class="flex-column">
+        <a class="d-block p-3 col-12"> link 1 </a>
+        <a class="d-block p-3 col-12"> link 1 </a>
+        <a class="d-block p-3 col-12"> link 1 </a>
+        <a class="d-block p-3 col-12"> link 1 </a>
       </div>
     </div>
   </div>

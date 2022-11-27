@@ -1,0 +1,9 @@
+.home-hero {
+  max-height: 80vh;
+
+  > img {
+    max-width: 1000px;
+    right: 15%;
+    z-index: 2;
+  }
+}
