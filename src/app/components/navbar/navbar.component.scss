@@ -58,9 +58,11 @@
 
 .navbar-mobile {
 
+  /* Button */
   .navbar-toggler {
     position: relative;
 
+    /* Circle behind */
     &:before {
       content: "";
       position: absolute;
@@ -74,17 +76,20 @@
       z-index: -1;
     }
 
+    /* Circle behind when menu active */
     &:focus:not(.collapsed):before {
         width: 30px;
         height: 30px;
         transition: all 0.3s ease-in-out;
     }
 
+    /* Hide outline when button pressed */
     &:focus {
       box-shadow: none !important;
     }
   }
 
+  /* Mobile navbar expandible menu */
   .hidden-menu {
     width: 100%;
     box-shadow: -5px 3px 10px -7px #666, 5px 3px 10px -7px #666;
