@@ -1,13 +1,9 @@
 <div class="navbar-container p-3 justify-content-center">
 
   <div class="navbar-desktop d-none d-md-grid col-md-10 col-xl-8">
-    <a> link 1 </a>
-    <a> link 1 </a>
-    <a> link 1 </a>
+    <a *ngFor="let item of menuItems | slice:0:3" (click)="scrollToSection(item.section)"> {{ item.title}} </a>
     <span></span>
-    <a> link 1 </a>
-    <a> link 1 </a>
-    <a> link 1 </a>
+    <a *ngFor="let item of menuItems | slice:3:6" (click)="scrollToSection(item.section)"> {{ item.title}} </a>
     <div class="navbar-logo">
       <img class="px-2 pb-1" src="../../../assets/img/logo.png" />
     </div>
@@ -29,10 +25,7 @@
     <!-- Hidden menu -->
     <div class="hidden-menu bg-white p-2 mt-3 collapse" id="navbarToggleMenu">
       <div class="flex-column">
-        <a class="d-block p-3 col-12"> link 1 </a>
-        <a class="d-block p-3 col-12"> link 1 </a>
-        <a class="d-block p-3 col-12"> link 1 </a>
-        <a class="d-block p-3 col-12"> link 1 </a>
+        <a class="d-block p-3 col-12" *ngFor="let item of menuItems" (click)="scrollToSection(item.section)"> {{ item.title}} </a>
       </div>
     </div>
   </div>

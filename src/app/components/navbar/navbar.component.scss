@@ -1,11 +1,18 @@
 .navbar-container {
   display: flex;
+  background-color: #fff;
   box-shadow: 0 0 10px -5px #666;
 
   > div {
     height: 45px;
     position: relative;
   }
+}
+
+a {
+  color: unset;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .navbar-desktop {
@@ -28,7 +35,7 @@
       position: absolute;
       bottom: 5px;
       left: calc(45%);
-      transition: all 0.75s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
 
     &:hover{
@@ -36,8 +43,8 @@
       transition: all 0.5s ease-in-out;
 
       &:after{
-        transform: scaleX(4);
-        transition: all 0.75s ease-in-out;
+        transform: scaleX(6);
+        transition: all 0.5s ease-in-out;
       }
     }
   }
